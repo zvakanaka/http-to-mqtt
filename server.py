@@ -15,7 +15,7 @@ def index():
     return ''
 
 @app.route('/publish', methods=['POST'])
-def drawRow():
+def publish():
     data = request.get_json(force=True)
     params = {
         'topic': data.get('topic'),
